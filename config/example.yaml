@@ -1,0 +1,21 @@
+embedding:
+  model: "nomic-embed-text-v1"
+  batch_size: 32
+  max_length: 512
+  image_size: [224, 224]
+  output_dir: "data/embeddings"
+
+vector_store:
+  host: "localhost"
+  port: 19530
+  alias: "default"
+  dimension: 768
+
+text_collection: "text_embeddings"
+image_collection: "image_embeddings"
+model: "mistralai/Mistral-7B-Instruct-v0.2"
+
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
+  file: "logs/app.log" 

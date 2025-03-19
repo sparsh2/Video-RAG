@@ -1,0 +1,46 @@
+# Data Processing Configuration
+data_processing:
+  video:
+    keyframe_interval: 1  # seconds
+    max_frames: 100
+    output_format: "jpg"
+  audio:
+    sample_rate: 16000
+    language: "en"
+  output_dir: "data/processed"
+
+# Embedding Configuration
+embedding:
+  model: "nomic-embed-text-v1"
+  batch_size: 32
+  max_length: 512
+  output_dir: "data/embeddings"
+
+# Milvus Configuration
+milvus:
+  host: "localhost"
+  port: 19530
+  collection_name: "mm_rag_embeddings"
+  dim: 768  # embedding dimension
+  index_type: "IVF_FLAT"
+  metric_type: "L2"
+
+# LLM Configuration
+llm:
+  model: "llava-v1.5-13b"
+  max_length: 2048
+  temperature: 0.7
+  top_p: 0.9
+  device: "cuda"  # or "cpu"
+
+# Web Interface Configuration
+web:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/mm_rag.log" 

@@ -1,0 +1,34 @@
+# Core dependencies
+numpy>=1.24.0
+torch>=2.0.0
+transformers>=4.30.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Vector database
+nomic>=3.0.0
+pymilvus>=2.3.0
+
+# Video processing
+moviepy>=1.0.3
+whisper>=1.1.10
+
+# Web interface
+gradio>=4.0.0
+streamlit>=1.30.0
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+tqdm>=4.65.0
+pydantic>=2.0.0
+loguru>=0.7.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.7.0
+isort>=5.12.0
+flake8>=6.1.0 
